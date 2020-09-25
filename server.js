@@ -14,7 +14,7 @@ const cors = require("cors");
 const bodyParser = require("body-parser");
 const dataService = require("./modules/data-service.js");
 
-const myData = dataService("mongodb+srv://test-user:test123@cluster0.62esx.mongodb.net/<sample_supplies>?retryWrites=true&w=majority");
+const myData = dataService("mongodb+srv://test-user:test123@cluster0.62esx.mongodb.net/sample_supplies?retryWrites=true&w=majority");
 
 const app = express();
 
