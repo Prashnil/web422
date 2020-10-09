@@ -51,7 +51,7 @@ const saleModalBodyTemplate = _.template(`
 `);
 
 const loadSaleData = () => {
-    fetch(`https://prashnilassignment1.herokuapp.com/api/sales/?page=${page}&perPage=${perPage}`)
+    fetch(`https://prashnilassignment1.herokuapp.com/api/sales/?page=1&perPage=10`)
         .then(response => response.json())
         .then(json => {
             saleData = json;
