@@ -2,12 +2,10 @@
 * WEB422 – Assignment 2
 * I declare that this assignment is my own work in accordance with Seneca Academic Policy.
 * No part of this assignment has been copied manually or electronically from any other source
-* (including web sites) or distributed to other students.
+* (including web sites) or distributed to other students. *
+* Name: Prashnil Prasad Student ID: 128171188 Date: Thursday, October 8th, 2020 *
 *
-* Name: Prashnil Prasad Student ID: 128171188 Date: Wednesday,Oct 7th, 2020
-* Heroku Link: https://prashnilassignment1.herokuapp.com/
-*
-********************************************************************************/ 
+********************************************************************************/
 
 
 let saleData = [];
@@ -53,7 +51,7 @@ const saleModalBodyTemplate = _.template(`
 `);
 
 const loadSaleData = () => {
-    fetch(`https://salesapi-niaz.herokuapp.com/api/sales/?page=${page}&perPage=${perPage}`)
+    fetch(`https://prashnilassignment1.herokuapp.com/api/sales/?page=${page}&perPage=${perPage}`)
         .then(response => response.json())
         .then(json => {
             saleData = json;
