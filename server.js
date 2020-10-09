@@ -89,7 +89,7 @@ app.delete("/api/sales/:id", (req,res)=> {
 
 myData.initialize().then(()=>{
     app.listen(HTTP_PORT,()=>{
-        console.log(`server listening on: ${HTTP_PORT}`);
+        console.log(`server listening on PORT: ${HTTP_PORT}`);
     });
 }).catch((err)=>{
     console.log(err);
