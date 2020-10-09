@@ -6,8 +6,6 @@
 * Name: Prashnil Prasad Student ID: 128171188 Date: Thursday, October 8th, 2020 *
 *
 ********************************************************************************/
-
-
 let saleData = [];
 let page = 1;
 let perPage = 10;
@@ -51,11 +49,11 @@ const saleModalBodyTemplate = _.template(`
 `);
 
 const loadSaleData = () => {
-    fetch(`https://prashnilassignment1.herokuapp.com/api/sales/?page=1&perPage=10`)
+    fetch(`https://prashnilassignment1.herokuapp.com/api/sales/?page=${page}&perPage=${perPage}`)
         .then(response => response.json())
         .then(json => {
             saleData = json;
-            $("#sale-table tbody").html(saleTableTemplate({ 'data': saleData }))
+            $("#sale-table tbody").html(saleTableTemplate({ data: saleData }))
             $("#current-page").html(page);
         })                                                              
 }
